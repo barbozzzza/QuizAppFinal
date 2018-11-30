@@ -1,0 +1,289 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/Question1_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16sp"
+            android:textColor="#006064">
+
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Name"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#03A9F4"
+                android:textSize="24sp"
+                android:textStyle="bold"
+
+                />
+
+
+            <TextView
+                android:id="@+id/question1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16sp"
+                android:text="Which of the following are examples of manner or articulation?"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#006064"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/answer1_question1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Affricate"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#006064"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                />
+
+            <CheckBox
+                android:id="@+id/answer2_question1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Bilabial"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#006064"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <CheckBox
+                android:id="@+id/answer3_question1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Nasal"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#006064"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/answer4_question1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Glide"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#006064"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/answer5_question1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Lateral"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#006064"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Question2_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Question1_layout"
+            android:orientation="vertical"
+            android:padding="16sp">
+
+
+            <TextView
+                android:id="@+id/question2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="The following phonemes are examples of which place of articulation?"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#03A9F4"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/question2_examples"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="30dp"
+                android:text="ʒ, ∫, t∫, dʒ, j"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#006064"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <RadioButton
+                android:id="@+id/answer1_question2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Palatal"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#006064"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/answer2_question2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Labio-dental"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#006064"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/answer3_question2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Alveolar"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#006064"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/answer4_question2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Glottal"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#006064"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/Question3_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Question2_layout"
+            android:orientation="vertical"
+            android:padding="16sp"
+            android:textColor="#006064">
+
+
+            <TextView
+                android:id="@+id/question3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Identift the voicing, place and manner of articulation of the phoneme /ʒ/"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#03A9F4"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/question3_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="hint: voicing, place, manner"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#006064"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/question4_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/Question3_layout"
+            android:orientation="vertical"
+            android:padding="16sp"
+            android:textColor="#006064">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="θ and δ is an example of a minimal pair."
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#03A9F4"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                />
+
+            <RadioGroup
+
+                android:id="@+id/question4_radio_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question4_layout"
+                android:orientation="vertical"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+                <RadioButton
+                    android:id="@+id/Correct_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="True"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#006064"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/no_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" False"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#006064"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question4_layout"
+            android:layout_margin="16sp"
+            android:onClick="SubmitQuiz"
+            android:text="Submit Quiz"
+            android:textColor="@android:color/black" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
