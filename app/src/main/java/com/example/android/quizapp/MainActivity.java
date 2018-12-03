@@ -20,32 +20,26 @@ public class MainActivity extends AppCompatActivity {
 
     int score ;
 
-
     /**
      * This method displays the score when the submit quiz button Is pressed.
      */
 
     public void SubmitQuiz(View view){
 
-    CheckBox question1_answer1 = findViewById(R.id.answer1_question1);
-    boolean firstAnswer = question1_answer1.isChecked();
+        CheckBox question1_answer1 = findViewById(R.id.answer1_question1);
+        boolean firstAnswer = question1_answer1.isChecked();
 
-    CheckBox question1_answer3 = findViewById(R.id.answer3_question1);
-        boolean thirdAnswer = question1_answer3.isChecked();
+        CheckBox question1_answer2 = findViewById(R.id.answer2_question1);
+        boolean secondAnswer = question1_answer2.isChecked();
 
-
-        CheckBox question1_answer4 = findViewById(R.id.answer4_question1);
-        boolean fourthAnswer = question1_answer4.isChecked();
-
-        CheckBox question1_answer5 = findViewById(R.id.answer5_question1);
-        boolean fifthAnswer = question1_answer5.isChecked();
 
         // this are the answer for question 2 check boxes
 
-        RadioButton question2_answer = findViewById(R.id.answer1_question2);
-        boolean question2correctAnswer = question2_answer.isChecked();
+        CheckBox question2_answer2 = findViewById(R.id.answer2_question2);
+        boolean secondAnswerQuestion2 = question2_answer2.isChecked();
 
-
+        CheckBox question2_answer4 = findViewById(R.id.answer4_question2);
+        boolean fourthAnswerQuestion2 = question2_answer4.isChecked();
 
         // correct answer for question 3
 
@@ -53,24 +47,15 @@ public class MainActivity extends AppCompatActivity {
         String question3CorrectAnswer = question3_Answer.getText().toString();
 
 
-
-
-     // correct answer for question 4
+        // correct answer for question 4
         RadioButton CorrectAnswerRadioButton = findViewById(R.id.Correct_radio_button);
         boolean question4correctAnswer = CorrectAnswerRadioButton.isChecked();
-
-
-
-
-
 
         // This assigns the quiz taker name to a string variable
         EditText nameOfQuizTaker = findViewById(R.id.name);
         String Name = nameOfQuizTaker.getText().toString();
 
-
-
-        int Score = calculateQuizScore(firstAnswer,thirdAnswer,fourthAnswer,fifthAnswer,question3CorrectAnswer,question2correctAnswer,question4correctAnswer);
+        int Score = calculateQuizScore(firstAnswer,secondAnswer,secondAnswerQuestion2,fourthAnswerQuestion2,question4correctAnswer,question3CorrectAnswer);
 
         Context context = getApplicationContext();
         CharSequence text =  Name + " Your Score is:" + Score;
@@ -78,16 +63,14 @@ public class MainActivity extends AppCompatActivity {
 
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
+        }
 
-
-    }
-
-/**
- * This method calculates the quiz score
- */
+    /**
+     * This method calculates the quiz score
+     */
 
     private int calculateQuizScore(boolean question1CorrectAnswer, boolean question1CorrectAnswer2,boolean question2CorrectAnswer,
-                                   boolean question4CorrectAnswer, String question3CorrectAnswer,boolean question1CorrectAnswer3,boolean question1CorrectAnswer4){
+                                   boolean question2CorrectAnswer2, boolean question4CorrectAnswer, String question3CorrectAnswer){
 
         int question1Score;
         int question2Score;
@@ -95,20 +78,20 @@ public class MainActivity extends AppCompatActivity {
         int question4Score;
 
 
-        if (question1CorrectAnswer && question1CorrectAnswer2 && question1CorrectAnswer3 && question1CorrectAnswer4) {
+        if (question1CorrectAnswer && question1CorrectAnswer2) {
             question1Score = 25;
         } else {
             question1Score = 0;
         }
 
 
-        if (question2CorrectAnswer) {
+        if (question2CorrectAnswer && question2CorrectAnswer2) {
             question2Score = 25;
         } else {
             question2Score = 0;
         }
 
-        if (question3CorrectAnswer.equals("voiced, palatal, fricative")){
+        if (question3CorrectAnswer.equals("Lika")){
             question3Score = 25 ;
         } else {
             question3Score = 0;
@@ -120,64 +103,7 @@ public class MainActivity extends AppCompatActivity {
             question4Score = 0;
         }
 
-
-
-
         return question1Score + question2Score + question4Score + question3Score;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        }
 }

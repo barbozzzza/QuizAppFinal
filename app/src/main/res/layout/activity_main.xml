@@ -2,288 +2,287 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
-    <RelativeLayout
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/spacecartoon"
+        >
 
-        <LinearLayout
-            android:id="@+id/Question1_layout"
+
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16sp"
-            android:textColor="#006064">
+            android:layout_height="match_parent">
 
-
-            <EditText
-                android:id="@+id/name"
+            <LinearLayout
+                android:id="@+id/Question1_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Enter Name"
-                android:textAppearance="?android:textAppearanceMedium"
+                android:orientation="vertical"
+                android:padding="16dp"
                 android:textColor="#03A9F4"
-                android:textSize="24sp"
-                android:textStyle="bold"
-
-                />
+                >
 
 
-            <TextView
-                android:id="@+id/question1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="16sp"
-                android:text="Which of the following are examples of manner or articulation?"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="#006064"
-                android:textSize="22sp"
-                android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Name"
+                    android:textColor="#03A9F4"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
 
-            <CheckBox
-                android:id="@+id/answer1_question1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="Affricate"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="#006064"
-                android:textSize="20sp"
-                android:textStyle="bold"
-
-                />
-
-            <CheckBox
-                android:id="@+id/answer2_question1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="Bilabial"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="#006064"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                    />
 
 
-            <CheckBox
-                android:id="@+id/answer3_question1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="Nasal"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="#006064"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/question1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:text="Select the names of the First Two Men to Walk on the moon"
+                    android:textColor="#03A9F4"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    />
 
-            <CheckBox
-                android:id="@+id/answer4_question1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="Glide"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="#006064"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                <CheckBox
+                    android:id="@+id/answer1_question1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:textSize="20sp"
+                    android:text="Neil A. Armstrong"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#03A9F4"
+                    android:textStyle="bold"
 
-            <CheckBox
-                android:id="@+id/answer5_question1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="Lateral"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="#006064"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                    />
 
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/Question2_layout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/Question1_layout"
-            android:orientation="vertical"
-            android:padding="16sp">
+                <CheckBox
+                    android:id="@+id/answer2_question1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edwin E. Buzz Aldrin, Jr."
+                    android:textColor="#03A9F4"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textSize="20sp"
+                    android:padding="24dp"
+                    android:textStyle="bold"/>
 
 
-            <TextView
-                android:id="@+id/question2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:text="The following phonemes are examples of which place of articulation?"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="#03A9F4"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                <CheckBox
+                    android:id="@+id/answer3_question1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Michael Collins"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#03A9F4"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:padding="24dp"/>
+
+                <CheckBox
+                    android:id="@+id/answer4_question1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The Moon Landing was Hoax "
+                    android:textColor="#03A9F4"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:padding="24dp"/>
 
 
-            <TextView
-                android:id="@+id/question2_examples"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:layout_marginLeft="30dp"
-                android:text="ʒ, ∫, t∫, dʒ, j"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="#006064"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+            </LinearLayout>
 
-
-            <RadioButton
-                android:id="@+id/answer1_question2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="Palatal"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="#006064"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <RadioButton
-                android:id="@+id/answer2_question2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="Labio-dental"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="#006064"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <RadioButton
-                android:id="@+id/answer3_question2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="Alveolar"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="#006064"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <RadioButton
-                android:id="@+id/answer4_question2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="Glottal"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="#006064"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:id="@+id/Question3_layout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/Question2_layout"
-            android:orientation="vertical"
-            android:padding="16sp"
-            android:textColor="#006064">
-
-
-            <TextView
-                android:id="@+id/question3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Identift the voicing, place and manner of articulation of the phoneme /ʒ/"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="#03A9F4"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-
-            <EditText
-                android:id="@+id/question3_answer"
+            <LinearLayout
+                android:layout_below="@id/Question1_layout"
+                android:id="@+id/Question2_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="hint: voicing, place, manner"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="#006064"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-        </LinearLayout>
+                android:orientation="vertical"
+                android:padding="16dp">
 
 
-        <LinearLayout
-            android:id="@+id/question4_layout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@id/Question3_layout"
-            android:orientation="vertical"
-            android:padding="16sp"
-            android:textColor="#006064">
+
+                <TextView
+                    android:id="@+id/question2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:textColor="#03A9F4"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Select the Names of the Apollo 11 and Apollo 16 Landing and Command Modules. "
+                    />
 
 
-            <TextView
+
+                <CheckBox
+                    android:id="@+id/answer1_question2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HMS: Queen Elizabeth"
+                    android:textColor="#03A9F4"
+                    android:padding="24dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <CheckBox
+                    android:id="@+id/answer2_question2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#03A9F4"
+                    android:text="The Eagle"
+                    android:padding="24dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+
+                <CheckBox
+                    android:id="@+id/answer3_question2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Discovery"
+                    android:textColor="#03A9F4"
+                    android:padding="24dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <CheckBox
+                    android:id="@+id/answer4_question2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="Orion"
+                    android:textColor="#03A9F4"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_below="@id/Question2_layout"
+                android:id="@+id/Question3_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:textColor="#03A9F4"
+                android:padding="16dp">
+
+
+
+                <TextView
+                    android:id="@+id/question3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="What is the name of the first animal in space?"
+                    android:textColor="#03A9F4"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    />
+
+
+                <EditText
+                    android:id="@+id/question3_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Answer"
+                    android:textColor="#03A9F4"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_below="@id/Question3_layout"
+                android:id="@+id/question4_layout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="θ and δ is an example of a minimal pair."
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="#03A9F4"
-                android:textSize="20sp"
-                android:textStyle="bold"
-
-                />
-
-            <RadioGroup
-
-                android:id="@+id/question4_radio_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/question4_layout"
                 android:orientation="vertical"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textSize="20sp"
-                android:textStyle="bold">
+                android:padding="16dp"
+                android:textColor="#03A9F4">
 
-                <RadioButton
-                    android:id="@+id/Correct_radio_button"
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Who was the first men in space?"
+                    android:textColor="#03A9F4"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+
+                    />
+
+                <RadioGroup
+
+                    android:layout_below="@id/question4_layout"
+                    android:id="@+id/question4_radio_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="True"
+                    android:orientation="vertical"
                     android:textAppearance="?android:textAppearanceMedium"
-                    android:textColor="#006064"
                     android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold">
 
-                <RadioButton
-                    android:id="@+id/no_radio_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=" False"
-                    android:textAppearance="?android:textAppearanceMedium"
-                    android:textColor="#006064"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-            </RadioGroup>
-
-
-        </LinearLayout>
-
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/question4_layout"
-            android:layout_margin="16sp"
-            android:onClick="SubmitQuiz"
-            android:text="Submit Quiz"
-            android:textColor="@android:color/black" />
+                    <RadioButton
+                        android:id="@+id/Correct_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yuri Gagarin"
+                        android:textColor="#03A9F4"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+                    <RadioButton
+                        android:id="@+id/no_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Alan B. Shepard"
+                        android:textColor="#03A9F4"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+                </RadioGroup>
 
 
-    </RelativeLayout>
+            </LinearLayout>
+
+
+            <Button
+                android:layout_below="@+id/question4_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:onClick="SubmitQuiz"
+                android:text="Submit Quiz"
+                android:textColor="@android:color/black" />
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
 
 </ScrollView>
