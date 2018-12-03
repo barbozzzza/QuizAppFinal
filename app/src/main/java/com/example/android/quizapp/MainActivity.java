@@ -28,6 +28,12 @@ public class MainActivity extends AppCompatActivity {
         CheckBox question1_answer2 = findViewById(R.id.answer2_question1);
         boolean secondAnswer = question1_answer2.isChecked();
 
+        CheckBox question1_answer3 = findViewById(R.id.answer3_question1);
+        boolean wrongAnswerQuestion1 = question1_answer3.isChecked();
+
+        CheckBox question1_answer4 = findViewById(R.id.answer4_question1);
+        boolean secondsWrongAnswerQuestion1 = question1_answer4.isChecked();
+
         // this are the answer for question 2 check boxes
 
         CheckBox question2_answer2 = findViewById(R.id.answer2_question2);
@@ -35,6 +41,14 @@ public class MainActivity extends AppCompatActivity {
 
         CheckBox question2_answer4 = findViewById(R.id.answer4_question2);
         boolean fourthAnswerQuestion2 = question2_answer4.isChecked();
+
+        CheckBox question2_answer3 = findViewById(R.id.answer3_question2);
+        boolean wrongAnswerQuestion2 = question2_answer3.isChecked();
+
+        CheckBox question2_answer1 = findViewById(R.id.answer1_question2);
+        Boolean secondWrongAnswerQuestion2 = question2_answer1.isChecked();
+
+
 
         // correct answer for question 3
 
@@ -45,11 +59,12 @@ public class MainActivity extends AppCompatActivity {
         RadioButton CorrectAnswerRadioButton = findViewById(R.id.Correct_radio_button);
         boolean question4correctAnswer = CorrectAnswerRadioButton.isChecked();
 
+
         // This assigns the quiz taker name to a string variable
         EditText nameOfQuizTaker = findViewById(R.id.name);
         String Name = nameOfQuizTaker.getText().toString();
 
-        int Score = calculateQuizScore(firstAnswer,secondAnswer,secondAnswerQuestion2,fourthAnswerQuestion2,question4correctAnswer,question3CorrectAnswer);
+        int Score = calculateQuizScore(firstAnswer,secondAnswer,secondAnswerQuestion2,fourthAnswerQuestion2,question4correctAnswer,question3CorrectAnswer,wrongAnswerQuestion1,wrongAnswerQuestion2,secondsWrongAnswerQuestion1,secondWrongAnswerQuestion2);
 
         Context context = getApplicationContext();
         CharSequence text =  Name + " Your Score is:" + Score;
@@ -64,19 +79,20 @@ public class MainActivity extends AppCompatActivity {
      */
 
     private int calculateQuizScore(boolean question1CorrectAnswer, boolean question1CorrectAnswer2,boolean question2CorrectAnswer,
-                                   boolean question2CorrectAnswer2, boolean question4CorrectAnswer, String question3CorrectAnswer){
+                                   boolean question2CorrectAnswer2, boolean question4CorrectAnswer, String question3CorrectAnswer, boolean question1wrongAnswer,boolean secondWrongAnswerQuestion1,
+                                   boolean wrongAnswerQuestion2,boolean secondWrongAnswerQuestion2){
 
         int question1Score;
         int question2Score;
         int question3Score;
         int question4Score;
 
-        if (question1CorrectAnswer && question1CorrectAnswer2) {
+        if (question1CorrectAnswer && question1CorrectAnswer2 && !question1wrongAnswer && ! secondWrongAnswerQuestion1) {
             question1Score = 25;
         } else {
             question1Score = 0;
         }
-        if (question2CorrectAnswer && question2CorrectAnswer2) {
+        if (question2CorrectAnswer && question2CorrectAnswer2 && !wrongAnswerQuestion2 && !secondWrongAnswerQuestion2) {
             question2Score = 25;
         } else {
             question2Score = 0;
